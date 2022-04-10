@@ -18,6 +18,17 @@ class Warrior extends Character{
 			System.out.println(this.Name+": I'll crush you with my "+weapon+"!");
 		}
 	}
-
+	public void moveRight(){
+	System.out.println(Name+": Moves right like a bad boy.");		
+	}
+	public void moveLeft(){
+	System.out.println(Name+": Moves left like a bad boy.");		
+	}
+	public void moveForward(){
+	System.out.println(Name+": Moves forward like a bad boy.");		
+	}
+	public void moveBack(){
+	System.out.println(Name+": Moves back like a bad boy.");		
+	}
 }
 

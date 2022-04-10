@@ -1,6 +1,6 @@
 package epitech;
 
-abstract class Character{
+abstract class Character implements Movable{
 	//Variables
 	String Name;
 	String RPGClass="Character";
@@ -20,5 +20,17 @@ abstract class Character{
 	protected boolean attackOrNot;
 	public void attack(String blabla){
 		if (attackOrNot) System.out.println(Name + ": Rrrrrrrrr....");
+	}
+	public void moveRight(){
+	System.out.println(Name+": Moves right");		
+	}
+	public void moveLeft(){
+	System.out.println(Name+": Moves left");		
+	}
+	public void moveForward(){
+	System.out.println(Name+": Moves forward");		
+	}
+	public void moveBack(){
+	System.out.println(Name+": Moves back");		
 	}
 }

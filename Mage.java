@@ -19,5 +19,18 @@ class Mage extends Character{
 		}
 	}
 	
+	public void moveRight(){
+	System.out.println(Name+": Moves right furtively.");		
+	}
+	public void moveLeft(){
+	System.out.println(Name+": Moves left furtively.");		
+	}
+	public void moveForward(){
+	System.out.println(Name+": Moves forward furtively.");		
+	}
+	public void moveBack(){
+	System.out.println(Name+": Moves back furtively.");		
+	}
+	
 }
 
