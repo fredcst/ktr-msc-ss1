@@ -2,11 +2,12 @@ package epitech;
 
 class Warrior extends Character{
 	Warrior(String name) {
-	      super(name,"Warrior");
-	      super.life = 70;
-	      super.strength = 3;
-	      super.agility = 10;
-	      super.wit = 10;
+		this.Name=name;
+		RPGClass="Warrior";
+		life=100;
+		agility=8;
+		strength=10;
+		wit=2;
 	      System.out.println(this.Name+": My name will go down in history!");
 	}
 	

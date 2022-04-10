@@ -3,11 +3,11 @@ package epitech;
 abstract class Character{
 	//Variables
 	String Name;
-	int life;
-	int agility;
-	int strength;
-	int wit;
-	String RPGClass;
+	String RPGClass="Character";
+	int life=50;
+	int agility=2;
+	int strength=2;
+	int wit=2;
 	
 	//Getters
 	public String getName() {return Name;}
@@ -17,24 +17,8 @@ abstract class Character{
 	public int getWit() {return wit;}
 	public String getRPGClass() {return RPGClass;}
 	
-	//Constructor
-	Character(String name, String RPGClass){
-		this.Name = name;
-		this.RPGClass = RPGClass;
-		life=50;
-		agility=2;
-		strength=2;
-		wit=2;
-	}
-	
 	protected boolean attackOrNot;
 	public void attack(String blabla){
 		if (attackOrNot) System.out.println(Name + ": Rrrrrrrrr....");
 	}
-}
-
-class TestCharacter extends Character{
-	   TestCharacter(String name) {
-		      super(name,null);
-		   }
 }
